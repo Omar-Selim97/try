@@ -1,0 +1,36 @@
+.product-btn{
+    display: block;
+   font-size: 30px;
+}
+.product-btn:hover{
+    background-color: rgb(17, 168, 156);
+    
+}
+.cardProduct{
+    background: rgba(255, 255, 255, 0.1) !important; /* Adjust opacity as needed */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    transition: background 0.3s ease-in-out;
+    transition: 0.3s ;
+ 
+}
+.cardProduct:hover {
+    transform: scale(1.1); 
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .was:hover{
+   color: rgb(34, 190, 94);
+    
+  }
+.cardBody{
+    height: 250px;
+    overflow: hidden;
+}
+@media (max-width: 575.98px) { 
+    .cardBody{
+        height: 180px;
+       
+    }
+ }

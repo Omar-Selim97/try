@@ -1,0 +1,19 @@
+.text-animation {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    animation: textAnimation 2s infinite alternate;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  @keyframes textAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }

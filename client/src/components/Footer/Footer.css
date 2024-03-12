@@ -1,0 +1,7 @@
+.iconLink i{
+   color: rgb(30, 68, 192);
+   transition: 0.3s;
+}
+.iconLink i:hover{
+    color: aqua;
+}
