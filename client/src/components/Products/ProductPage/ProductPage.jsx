@@ -8,7 +8,7 @@ import { addToCart } from '../../../redux/cartReducer';
 import { useDispatch } from 'react-redux';
 import { FaWhatsapp } from "react-icons/fa6";
 import Heading from '../../Heading/Heading';
-
+import LazyLoad from 'react-lazy-load';
 export default  function ProductPage() {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
@@ -40,7 +40,9 @@ export default  function ProductPage() {
   }, [productId]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>  <LazyLoad height={762}>
+    <img src='http://apod.nasa.gov/apod/image/1502/HDR_MVMQ20Feb2015ouellet1024.jpg' />
+  </LazyLoad></div>;
   }
 
   if (!product) {
