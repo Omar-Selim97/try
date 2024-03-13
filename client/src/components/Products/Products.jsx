@@ -1,6 +1,7 @@
 import React, { useState ,useEffect } from 'react'
 import  './Products.css'
 import useFetch from '../../hooks/useFetch'
+import LazyLoad from 'react-lazy-load';
 import {
   MDBCard,
   MDBCardImage,
@@ -31,7 +32,9 @@ export default function Products() {
        
     
     
-    { loading ? "Loading" 
+    { loading ?   <LazyLoad height={762}>
+      <img src='http://apod.nasa.gov/apod/image/1502/HDR_MVMQ20Feb2015ouellet1024.jpg' />
+    </LazyLoad>
     : 
     products.map(product=>(
       <MDBCol key={product.id}>
